@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.expensetracker</groupId>
-	<artifactId>ExpenseTracker</artifactId>
+	<artifactId>Innovative_Interior</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ExpenseTracker</name>
 	<description>Demo project for Spring Boot</description>
