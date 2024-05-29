@@ -32,7 +32,7 @@ pipeline {
          stage('Build Docker image'){
           
             steps {
-                echo "Welcome to Expense Tracker"
+                echo "Welcome to Innovative_Interior"
                 sh 'ls'
                 sh 'docker build -t  syedraza517/expense-tracker-last:${BUILD_NUMBER} .'
             }
