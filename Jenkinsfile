@@ -34,24 +34,24 @@ pipeline {
             steps {
                 echo "Welcome to Innovative_Interior"
                 sh 'ls'
-                sh 'docker build -t  syedraza517/expense-tracker-last:${BUILD_NUMBER} .'
+                sh 'docker build -t  abhishekabhi1596/Innovative_Interior-last:${BUILD_NUMBER} .'
             }
         }
          stage('Docker Login'){
             
             steps {
-                    sh "docker login -u syedraza517 -p docker123"
+                    sh "docker login -u abhishekabhi1596 -p docker123"
                 }
             }                
           stage('Docker Push'){
             steps {
-                sh 'docker push syedraza517/expense-tracker-last:${BUILD_NUMBER}'
+                sh 'docker push abhishekabhi1596/Innovative_Interior-last:${BUILD_NUMBER}'
             }
         }
         stage('Docker deploy'){
             steps {
                
-                sh 'docker run -itd -p  8281:80 syedraza517/expense-tracker-last:${BUILD_NUMBER}'
+                sh 'docker run -itd -p  8281:80 abhishekabhi1596/Innovative_Interior-last:${BUILD_NUMBER}'
             }
         }
         stage('Archving') { 
