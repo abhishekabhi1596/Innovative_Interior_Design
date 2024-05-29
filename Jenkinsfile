@@ -32,7 +32,7 @@ pipeline {
          stage('Build Docker image'){
           
             steps {
-                echo "Welcome to Innovative_Interior"
+                echo "Welcome to Innovative_Interior mien abhi hoon"
                 sh 'ls'
                 sh 'docker build -t  abhishekabhi1596/Innovative_Interior-last:${BUILD_NUMBER} .'
             }
